@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add an article</title>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+	<form id="upload-widget" method="post" action="/api/upload/"" class="dropzone"></form>
+
+	<script>
+
+	Dropzone.autoDiscover = false;
+	var myDropzone = new Dropzone("#upload-widget", {});
+
+	</script>
+
+
+</body>
+</html>
